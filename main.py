@@ -1,20 +1,20 @@
 class StringCalculator():
     def add(self, numbers=""):
-        negativesList = []
+        sum = 0
         # If nullstring is passed
         if len(numbers) == 0:
             return 0
-        #if a single digit number is passed
-        elif ',' not in numbers:
-            return int(numbers)
+       #if a single digit number is passed
+        elif (',' or ';' or '\n' or '//' not in numbers) :
+            sum = int(numbers)
+            return sum
 
         numbers = numbers.replace("\n", ",")
-        total = 0
+        numbers = numbers.replace("//", "")
+        numbers = numbers.replace(";", ",")
+        numbers=numbers.split(",")
 
-        for number in numbers.split(','):
+        for i in range(len(numbers)):
+            sum+=int(numbers[i])
 
-            if int(number) <= 1000:
-                total += int(number)
-
-        return total
-
+        return sum

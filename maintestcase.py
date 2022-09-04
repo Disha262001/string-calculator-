@@ -21,6 +21,9 @@ class StringCalculatorTestCase(unittest.TestCase):
         result9 = self.stringCal.add("1005,99,100,05")
         self.assertEqual(result9, 204)
 
+        result10 = self.stringCal.add("1\n2,3")
+        self.assertEqual(result10, 6)
+
 
 
 

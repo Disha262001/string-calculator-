@@ -8,12 +8,13 @@ class StringCalculator():
         elif ',' not in numbers:
             return int(numbers)
 
+        numbers = numbers.replace("\n", ",")
         total = 0
 
         for number in numbers.split(','):
 
             if int(number) <= 1000:
-
                 total += int(number)
 
         return total
+

@@ -3,3 +3,5 @@ class StringCalculator():
         # If nullstring is passed
         if len(numbers) == 0:
             return 0
+        else:
+            return int(numbers)

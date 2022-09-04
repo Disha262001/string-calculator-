@@ -4,10 +4,9 @@ class StringCalculator():
         if len(numbers) == 0:
             return 0
         #if a single digit number is passed
-        try:
-            x= int(numbers)
-            return x
-        #if two numbers are passes seperating with a delimiter ' comma(,)'
-        except:
-            position = 2
-
+        else:
+            sum = 0
+            numbers = numbers.split(',')
+            for i in numbers:
+                sum += int(i)
+            return sum

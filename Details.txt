@@ -1,0 +1,4 @@
+- This program is designed for a simple string calculator.
+- main.py file contains the basic code according to the given problem statement.
+- maintestcase.py file is used to test the basic code.
+- Every code is tested and then pushed to the repository.

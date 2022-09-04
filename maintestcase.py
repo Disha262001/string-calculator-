@@ -12,3 +12,7 @@ class StringCalculatorTestCase(unittest.TestCase):
         result1 = self.stringCal.add("2")
         self.assertEqual(result1, 2)
 
+        result2 = self.stringCal.add("22")
+        self.assertEqual(result2, 22)
+
+

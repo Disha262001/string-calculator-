@@ -3,5 +3,11 @@ class StringCalculator():
         # If nullstring is passed
         if len(numbers) == 0:
             return 0
-        else:
-            return int(numbers)
+        #if a single digit number is passed
+        try:
+            x= int(numbers)
+            return x
+        #if two numbers are passes seperating with a delimiter ' comma(,)'
+        except:
+            position = 2
+

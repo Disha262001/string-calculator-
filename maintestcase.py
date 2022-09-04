@@ -15,14 +15,11 @@ class StringCalculatorTestCase(unittest.TestCase):
         result2 = self.stringCal.add("22")
         self.assertEqual(result2, 22)
 
-        result3 = self.stringCal.add("3,6")
-        self.assertEqual(result3, 9)
+        result8 = self.stringCal.add("2,1001")
+        self.assertEqual(result8, 2)
 
-        result4 = self.stringCal.add("40,1")
-        self.assertEqual(result4, 41)
-
-        result6 = self.stringCal.add("1,2,a,c")
-        self.assertEqual(result6, 7)
+        result9 = self.stringCal.add("1005,99,100,05")
+        self.assertEqual(result9, 204)
 
 
 
